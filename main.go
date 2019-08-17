@@ -41,6 +41,7 @@ func main() {
 		s, err := getServiceByID(serviceID)
 		if err != nil {
 			log.Println("WARN: failed to get service by id with error: ", err)
+			continue
 		}
 		services = append(services, s)
 	}
